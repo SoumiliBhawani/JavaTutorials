@@ -125,3 +125,38 @@ Enter first integer: 10 <br>
 Enter second integer: 20 <br>
 Enter third integer: 30 <br>
 Product is 6000
+
+# Understanding Classes in Java (GradeBook Example)
+
+## 📌 What is a Class?
+- A **class** in Java is a blueprint for creating objects.
+- It contains:
+  - **Attributes (variables)** → data
+  - **Operations (methods)** → behavior
+
+---
+
+## 🖥️ Example: GradeBook Class
+- `GradeBook` has one method: `displayMessage()`
+  - Prints: **"Welcome to the Grade Book!"**
+
+```java
+public class GradeBook {
+    public void displayMessage() {
+        System.out.println("Welcome to the Grade Book!");
+    }
+}
+```
+## 🖥️ Example: GradeBookTest ClassContains the main method.Creates an object of GradeBook using new GradeBook().Calls the method with myGradeBook.displayMessage().java
+```java
+public class GradeBookTest {
+    public static void main(String[] args) {
+        GradeBook myGradeBook = new GradeBook();
+        myGradeBook.displayMessage();
+    }
+}
+```
+## 🔑 Keywords 
+public → makes the class/method accessible from other classes.
+
+static → allows a method (like main) to run without creating an object.

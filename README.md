@@ -160,3 +160,67 @@ public class GradeBookTest {
 public → makes the class/method accessible from other classes.
 
 static → allows a method (like main) to run without creating an object.
+
+# Types of Constructors in Java
+
+In Java, constructors are special methods used to initialize objects. They have the same name as the class and no return type. There are three main types:
+
+---
+
+## 1. Default Constructor
+- **Definition**: A constructor with no parameters.
+- **Behavior**: If you don’t define any constructor, the compiler provides a default one.
+- **Use Case**: Initializes objects with default values.
+
+```java
+class Student {
+    String name;
+    int age;
+
+    // Default constructor
+    Student() {
+        name = "Unknown";
+        age = 0;
+    }
+}
+```
+---
+## 2. Parameterized Constructor
+Definition: A constructor that takes arguments.
+
+Behavior: Allows initialization of objects with specific values.
+
+Use Case: Useful when you want to set properties at object creation.
+
+```java
+class Student {
+    String name;
+    int age;
+
+    // Parameterized constructor
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+---
+## 3. Copy Constructor
+Definition: A constructor that creates a new object by copying values from another object.
+
+Behavior: Not built-in like in C++, but can be defined manually.
+
+Use Case: Used to duplicate objects safely (shallow or deep copy).
+
+```java
+class Student {
+    String name;
+    int age;
+
+    // Copy constructor
+    Student(Student other) {
+        this.name = other.name;
+        this.age = other.age;
+    }
+}
+```

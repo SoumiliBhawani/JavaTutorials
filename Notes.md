@@ -106,6 +106,15 @@ Operate on binary representations of integers.
 - `>>` (Right Shift)
 - `>>>` (Unsigned Right Shift)
 
+**Example:**
+```java
+int a = 5;  // 0101
+int b = 3;  // 0011
+System.out.println(a & b); // 1 (0001)
+System.out.println(a | b); // 7 (0111)
+System.out.println(a ^ b); // 6 (0110)
+```
+
 ---
 
 ## 1. Bitwise AND (`&`)
@@ -184,15 +193,6 @@ Example with `a = -20` (in binary two’s complement):
 | a >>> 1    | Large positive value (sign bit cleared) | Depends on 32-bit representation |
 
 ---
-
-**Example:**
-```java
-int a = 5;  // 0101
-int b = 3;  // 0011
-System.out.println(a & b); // 1 (0001)
-System.out.println(a | b); // 7 (0111)
-System.out.println(a ^ b); // 6 (0110)
-```
 
 ## 7. Conditional(Ternary Operator)
 Shorthand for `if-else`

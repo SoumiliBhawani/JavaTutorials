@@ -40,6 +40,32 @@ Used to combine boolean expressions.
 - `!` (Logical NOT)
 - `^` (Logical XOR)
 
+## Logical AND (`&&`)
+| A     | B     | A && B |
+|-------|-------|--------|
+| false | false | false  |
+| false | true  | false  |
+| true  | false | false  |
+| true  | true  | true   |
+
+---
+
+## Logical OR (`||`)
+| A     | B     | A \|\| B |
+|-------|-------|----------|
+| false | false | false    |
+| false | true  | true     |
+| true  | false | true     |
+| true  | true  | true     |
+
+---
+
+## Logical NOT (`!`)
+| A     | !A    |
+|-------|-------|
+| false | true  |
+| true  | false |
+
 **Example:**
 ```java
 boolean a = true, b = false;
@@ -79,6 +105,85 @@ Operate on binary representations of integers.
 - `<<` (Left Shift)
 - `>>` (Right Shift)
 - `>>>` (Unsigned Right Shift)
+
+---
+
+## 1. Bitwise AND (`&`)
+| A | B | A & B |
+|---|---|-------|
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+---
+
+## 2. Bitwise OR (`|`)
+| A | B | A \| B |
+|---|---|--------|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+
+---
+
+## 3. Bitwise XOR (`^`)
+| A | B | A ^ B |
+|---|---|-------|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+---
+
+## 4. Bitwise NOT (`~`)
+Unary operator — flips each bit.
+
+| A | ~A |
+|---|----|
+| 0 | 1  |
+| 1 | 0  |
+
+> ⚠️ In Java, integers are stored in **two’s complement**, so `~x = -(x+1)`.
+
+---
+
+## 5. Left Shift (`<<`)
+Shifts bits to the left, filling with 0.
+
+Example with `a = 5 (0101)`:
+
+| Expression | Result (Binary) | Result (Decimal) |
+|------------|-----------------|------------------|
+| a << 1     | 1010            | 10 |
+| a << 2     | 10100           | 20 |
+
+---
+
+## 6. Right Shift (`>>`)
+Shifts bits to the right, preserving the **sign bit**.
+
+Example with `a = 20 (10100)`:
+
+| Expression | Result (Binary) | Result (Decimal) |
+|------------|-----------------|------------------|
+| a >> 1     | 1010            | 10 |
+| a >> 2     | 101             | 5 |
+
+---
+
+## 7. Unsigned Right Shift (`>>>`)
+Shifts bits to the right, filling with **0** (ignores sign bit).
+
+Example with `a = -20` (in binary two’s complement):
+
+| Expression | Result (Binary) | Result (Decimal) |
+|------------|-----------------|------------------|
+| a >>> 1    | Large positive value (sign bit cleared) | Depends on 32-bit representation |
+
+---
 
 **Example:**
 ```java

@@ -142,6 +142,8 @@ Parentheses `()` can always be used to override precedence.
 | 14 | `=`, `+=`, `-=`, `*=`, `/=`, `%=` , `&=`, `^=`, `|=`, `<<=`, `>>=`, `>>>=` | Assignment operators |
 | 15 (Lowest) | `,` | Comma (rarely used in Java) |
 
+<img width="527" height="261" alt="image" src="https://github.com/user-attachments/assets/0c0426ed-4d26-40ab-8a20-9b6acd12178f" />
+
 
 ## Example Demonstrations
 

@@ -125,3 +125,102 @@ Enter first integer: 10 <br>
 Enter second integer: 20 <br>
 Enter third integer: 30 <br>
 Product is 6000
+
+# Understanding Classes in Java (GradeBook Example)
+
+## 📌 What is a Class?
+- A **class** in Java is a blueprint for creating objects.
+- It contains:
+  - **Attributes (variables)** → data
+  - **Operations (methods)** → behavior
+
+---
+
+## 🖥️ Example: GradeBook Class
+- `GradeBook` has one method: `displayMessage()`
+  - Prints: **"Welcome to the Grade Book!"**
+
+```java
+public class GradeBook {
+    public void displayMessage() {
+        System.out.println("Welcome to the Grade Book!");
+    }
+}
+```
+## 🖥️ Example: GradeBookTest ClassContains the main method.Creates an object of GradeBook using new GradeBook().Calls the method with myGradeBook.displayMessage().java
+```java
+public class GradeBookTest {
+    public static void main(String[] args) {
+        GradeBook myGradeBook = new GradeBook();
+        myGradeBook.displayMessage();
+    }
+}
+```
+## 🔑 Keywords 
+public → makes the class/method accessible from other classes.
+
+static → allows a method (like main) to run without creating an object.
+
+# Types of Constructors in Java
+
+In Java, constructors are special methods used to initialize objects. They have the same name as the class and no return type. There are three main types:
+
+---
+
+## 1. Default Constructor
+- **Definition**: A constructor with no parameters.
+- **Behavior**: If you don’t define any constructor, the compiler provides a default one.
+- **Use Case**: Initializes objects with default values.
+
+```java
+class Student {
+    String name;
+    int age;
+
+    // Default constructor
+    Student() {
+        name = "Unknown";
+        age = 0;
+    }
+}
+```
+---
+## 2. Parameterized Constructor
+Definition: A constructor that takes arguments.
+
+Behavior: Allows initialization of objects with specific values.
+
+Use Case: Useful when you want to set properties at object creation.
+
+```java
+class Student {
+    String name;
+    int age;
+
+    // Parameterized constructor
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+---
+## 3. Copy Constructor
+Definition: A constructor that creates a new object by copying values from another object.
+
+Behavior: Not built-in like in C++, but can be defined manually.
+
+Use Case: Used to duplicate objects safely (shallow or deep copy).
+
+```java
+class Student {
+    String name;
+    int age;
+
+    // Copy constructor
+    Student(Student other) {
+        this.name = other.name;
+        this.age = other.age;
+    }
+}
+```

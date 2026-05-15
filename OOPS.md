@@ -195,6 +195,10 @@ import java.io.IOException;
 - Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
 
 - Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+<img width="602" height="563" alt="image" src="https://github.com/user-attachments/assets/eb6ccaeb-b120-4853-a618-eabb766e03db" />
+Here’s what protected looks like in use:
+<img width="593" height="657" alt="image" src="https://github.com/user-attachments/assets/f60b2076-8ccc-4f22-bd2b-7e74eeb01232" />
+
 ``` java
 package newpackage;
 

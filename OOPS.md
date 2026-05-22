@@ -1,5 +1,4 @@
 # OBJECT ORIENTED PROGRAMMING SYSTEMS  
-## JAVA
 
 Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies the software development and maintenance by providing some concepts defined below :  
 
